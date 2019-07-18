@@ -2,4 +2,5 @@
 import PackageDescription
 
 let package = Package(
-    name: "ISEmojiView")
+    name: "ISEmojiView",
+    targets: [.target(name: "ISEmojiView", dependencies: [])
