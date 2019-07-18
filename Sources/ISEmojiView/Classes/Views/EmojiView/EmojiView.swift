@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public enum BottomType: Int {
     case pageControl, categories
@@ -225,7 +226,7 @@ extension EmojiView {
     }
     
     private func setupEmojiCollectionView() {
-        let emojiCollectionView = EmojiCollectionView.loadFromNib(emojis: emojis)
+        let emojiCollectiionView = EmojiCollectionView.loadFromNib(emojis: emojis)
         emojiCollectionView.isShowPopPreview = keyboardSettings?.isShowPopPreview ?? isShowPopPreview
         emojiCollectionView.delegate = self
         emojiCollectionView.translatesAutoresizingMaskIntoConstraints = false
